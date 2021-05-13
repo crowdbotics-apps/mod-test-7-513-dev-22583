@@ -1,23 +1,26 @@
-# Privacy Policy Screen
+# Privacy Policy
 
-The Privacy Policy Screen is a React Native based screen that renders plaintext privacy policy with a simple header.
+The Privacy Policy is a ReactNative based screen that leverages the parallax with a custom header.
+
+### Set the left arrow screen redirect and website link.
+
+`modules/privacy-policy/index.js`
+
+Update the value of `PRIVACY_WEBSITE_URL` in `index.js` with the desired website you would like to redirect users to:
+
+```js
+const PRIVACY_WEBSITE_URL = "https://www.crowdbotics.com/privacy-policy";
+```
 
 ## Manual Setup
 
 If you want to use the module directly, or in other modules, you can do so by importing it and using the following properties.
 
 ```javascript
-import PrivacyPolicy from "@modules/terms-and-conditions";
+import PrivacyPolicy from "@modules/privacy-policy";
 
-const { title, navigator } = TermsAndConditions;
+const { title, navigator } = PrivacyPolicy;
 ```
-
-## Configuring the Privacy Policy Frontend
-All that is required to configure the frontend is to edit the url in `index.js` to point to your app's url on the web. On line 14 of `index.js`, replace <APP_URL_HERE> with your App's url (you can get this from the crowdbotics dashboard). 
-`fetch('https://<APP_URL_HERE>.botics.co/modules/terms-and-conditions/')`
-
-
-Additional url configuration is possible by changing your main urls.py (not the privacy urls.py) and/or changing privacy/urls.py
 
 ## Contributing
 
