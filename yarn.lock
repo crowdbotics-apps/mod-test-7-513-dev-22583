@@ -941,6 +941,9 @@
 "@modules/app-menu@file:./modules/app-menu":
   version "1.0.0"
 
+"@modules/app-menu@file:./modules/app-menu/":
+  version "1.0.0"
+
 "@modules/privacy-policy@file:./modules/privacy-policy":
   version "1.0.1"
   dependencies:
